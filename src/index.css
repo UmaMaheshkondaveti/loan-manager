@@ -1,0 +1,73 @@
+
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+    :root {
+      --background: 0 0% 100%;
+      --foreground: 224 71.4% 4.1%;
+      --card: 0 0% 100%;
+      --card-foreground: 224 71.4% 4.1%;
+      --popover: 0 0% 100%;
+      --popover-foreground: 224 71.4% 4.1%;
+      --primary: 142.1 76.2% 36.3%; 
+      --primary-foreground: 355.7 100% 97.3%;
+      --secondary: 220 14.3% 95.9%;
+      --secondary-foreground: 220.9 39.3% 11%;
+      --muted: 220 14.3% 95.9%;
+      --muted-foreground: 225.5 8.9% 43.1%;
+      --accent: 220 14.3% 95.9%;
+      --accent-foreground: 220.9 39.3% 11%;
+      --destructive: 0 84.2% 60.2%;
+      --destructive-foreground: 60 9.1% 97.8%;
+      --border: 220 13% 91%;
+      --input: 220 13% 91%;
+      --ring: 142.1 76.2% 36.3%;
+      --radius: 0.5rem;
+    }
+
+    .dark {
+      --background: 224 71.4% 4.1%;
+      --foreground: 60 9.1% 97.8%;
+      --card: 224 71.4% 4.1%;
+      --card-foreground: 60 9.1% 97.8%;
+      --popover: 224 71.4% 4.1%;
+      --popover-foreground: 60 9.1% 97.8%;
+      --primary: 142.1 76.2% 36.3%;
+      --primary-foreground: 355.7 100% 97.3%;
+      --secondary: 215 27.9% 16.9%;
+      --secondary-foreground: 60 9.1% 97.8%;
+      --muted: 215 27.9% 16.9%;
+      --muted-foreground: 217.9 10.6% 64.9%;
+      --accent: 215 27.9% 16.9%;
+      --accent-foreground: 60 9.1% 97.8%;
+      --destructive: 0 62.8% 30.6%;
+      --destructive-foreground: 60 9.1% 97.8%;
+      --border: 215 27.9% 16.9%;
+      --input: 215 27.9% 16.9%;
+      --ring: 142.1 76.2% 36.3%;
+    }
+    
+    body {
+      @apply bg-background text-foreground;
+      font-feature-settings: "rlig" 1, "calt" 1;
+    }
+    
+    .gradient-bg {
+      background: linear-gradient(120deg, hsl(var(--primary) / 0.8), hsl(var(--primary) / 0.6) 70%, hsl(var(--accent) / 0.5));
+    }
+
+    .glassmorphism {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .simple-bar-chart-bar {
+      transition: height 0.3s ease-out, background-color 0.3s ease;
+    }
+    .simple-bar-chart-bar:hover {
+      opacity: 0.8;
+    }
+  
